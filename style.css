@@ -1,0 +1,38 @@
+.mainWrapper {
+    display: grid;
+    grid-template-rows: 300px 1fr 20px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+}
+
+.tetris {
+    background-color: blue;
+}
+
+.topCenter {
+    background-color: olivedrab;
+}
+
+.topRight {
+    background-color: blue;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.middleLeft {
+    background-color: yellowgreen;
+}
+
+.middleRight {
+    background-color: ButtonHighlight;
+}
+
+.bottom {
+    background-color: rosybrown;
+}
