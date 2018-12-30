@@ -6,10 +6,22 @@
 .top {
     display: grid;
     grid-template-columns: 300px 1fr 300px;
+    background-color: blue;
 }
 
-.tetris {
-    background-color: blue;
+#tetris {
+    display: grid;
+    grid-template-rows: repeat(10, 30px);
+}
+
+.tetrisLine {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+}
+
+.tetrisCell {
+    width: 30px;
+    height: 30px;
 }
 
 .topCenter {
@@ -36,3 +48,4 @@
 .bottom {
     background-color: rosybrown;
 }
+

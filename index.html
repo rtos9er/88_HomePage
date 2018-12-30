@@ -8,8 +8,10 @@
 <body>
     <div class="mainWrapper">
         <div class="top">
-            <div class="tetris">
-                <script src="./tetris.js"></script>
+            <div id="tetris">
+                <script src="./Tetris/TetrisView.js"></script>
+                <script src="./Tetris/TetrisModel.js"></script>
+                <script src="./Tetris/TetrisViewModel.js"></script>
             </div>
             <div class="topCenter"></div>
             <div class="topRight"></div>
@@ -33,7 +35,8 @@
         <div class="bottom"></div>
     </div>
     <script>
-        tetris();
+        window.onload = tetrisView.makeTetrisPanel();
+        const test = () => tetrisViewModel.test();
     </script>
 </body>
 </html>
