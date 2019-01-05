@@ -4,6 +4,16 @@
     <meta charset="utf-8" />
     <title>홈 페이지</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Tetris/Tetris.css">
+    <script>
+        window.onload = function () {
+            const tetrisViewModel = new TetrisViewModel();
+            tetrisViewModel.run();
+
+            // 테스트
+            window.test = () => tetrisViewModel.test();
+        }
+    </script>
 </head>
 <body>
     <div class="mainWrapper">
@@ -35,8 +45,7 @@
         <div class="bottom"></div>
     </div>
     <script>
-        window.onload = tetrisView.makeTetrisPanel();
-        const test = () => tetrisViewModel.test();
+        
     </script>
 </body>
 </html>

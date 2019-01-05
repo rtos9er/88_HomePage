@@ -1,7 +1,11 @@
 // JavaScript source code
-const tetrisView = {
-    _panelLineNumber: 10, // Panel 행 수
-    _panelCellNumber: 10, // Panel 열 수
+'use strict';
+
+class TetrisView {
+    constructor(lineNumber, cellNumber) {
+        this._panelLineNumber = lineNumber; // Panel 행 수
+        this._panelCellNumber = cellNumber; // Panel 열 수
+    }
     _makeRandomColor() {    // #ccddee 문자열 만들기
         const ColorNumber = '0123456789abcdef';
         let color = '#';
@@ -10,7 +14,7 @@ const tetrisView = {
             color += ColorNumber[num];
         }
         return color;
-    },
+    }
     makeTetrisPanel() {
         let panel = document.getElementById('tetris');
         for (let i = 0; i < this._panelLineNumber; i++) {
@@ -24,11 +28,11 @@ const tetrisView = {
             }
             panel.appendChild(panelLine);
         }
-    },
+    }
     testRandomColor() {
         let cells = document.getElementsByClassName('tetrisCell');
         for (let i = 0; i < cells.length; i++) {
             cells[i].style.backgroundColor = this._makeRandomColor();
         }
     }
-};
+}

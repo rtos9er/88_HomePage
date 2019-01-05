@@ -9,20 +9,7 @@
     background-color: blue;
 }
 
-#tetris {
-    display: grid;
-    grid-template-rows: repeat(10, 30px);
-}
-
-.tetrisLine {
-    display: grid;
-    grid-template-columns: repeat(10, 30px);
-}
-
-.tetrisCell {
-    width: 30px;
-    height: 30px;
-}
+/* .topLeft : 테트리스 ./Tetris/Tetris.css */
 
 .topCenter {
     background-color: olivedrab;
