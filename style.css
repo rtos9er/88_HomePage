@@ -1,38 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Home Page : Flex 레이아웃 사용 */
 .mainWrapper {
-    display: grid;
-    grid-template-rows: 300px 1fr 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.top {
-    display: grid;
-    grid-template-columns: 300px 1fr 300px;
-    background-color: blue;
+/* Header : 테트리스, 타이틀, 블럭 격파 */
+
+/* Middle : Navigator, Main, Aside */
+.mainContents {
+    display: flex;
+    flex-direction: row;
 }
 
-/* .topLeft : 테트리스 ./Tetris/Tetris.css */
-
-.topCenter {
-    background-color: olivedrab;
-}
-
-.topRight {
-    background-color: blue;
-}
-
-.middle {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-}
-
-.middleLeft {
+.nav {
+    flex-basis: 200px;
+    flex-shrink: 0;
+ 
+    border-right: 1px solid gray;
     background-color: yellowgreen;
 }
 
-.middleRight {
+.main {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding-left: 1rem;
+    text-justify: auto;
     background-color: ButtonHighlight;
 }
 
-.bottom {
+.aside {
+    flex-basis: 15%;
+    flex-shrink: 0;
+    
+    border-left: 1px solid gray;
+    background-color: tomato;
+}
+
+/* Footer : 저작권? */
+.footer {
+    border-top: 1px solid gray;
+    text-align: center;
     background-color: rosybrown;
 }
 
+/* 광고 삭제 미디어 쿼리 */
+@media (max-width: 520px) {
+    .aside {
+        display: none;
+    }
+
+    .nav {
+        flex-basis: 30%;
+        flex-shrink: 1;
+    }
+}

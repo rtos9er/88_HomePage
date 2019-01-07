@@ -9,7 +9,7 @@ class TetrisViewModel {
         this._tetrisView = new TetrisView(this._panelLineNumber, this._panelCellNumber);
     }
 
-    run() {
+    start() {
         this._tetrisView.makeTetrisPanel();
     }
 

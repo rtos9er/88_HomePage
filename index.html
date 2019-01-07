@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>홈 페이지</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./Tetris/Tetris.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./Header/Tetris/Tetris.css">
+    <link rel="stylesheet" href="./Header/Header.css">
     <script>
         window.onload = function () {
             const tetrisViewModel = new TetrisViewModel();
-            tetrisViewModel.run();
+            tetrisViewModel.start();
 
             // 테스트
             window.test = () => tetrisViewModel.test();
@@ -17,35 +18,50 @@
 </head>
 <body>
     <div class="mainWrapper">
-        <div class="top">
+        <header class="header">
             <div id="tetris">
-                <script src="./Tetris/TetrisView.js"></script>
-                <script src="./Tetris/TetrisModel.js"></script>
-                <script src="./Tetris/TetrisViewModel.js"></script>
+                <script src="./Header/Tetris/TetrisModel.js"></script>
+                <script src="./Header/Tetris/TetrisView.js"></script>
+                <script src="./Header/Tetris/TetrisViewModel.js"></script>
             </div>
-            <div class="topCenter"></div>
-            <div class="topRight"></div>
-        </div>
-        <div class="middle">
-            <div class="middleLeft">
+            <div class="headerCenter">
+                <h1 id="headerTitle">
+                    제목
+                </h1>
+            </div>
+            <div class="headerRight"></div>
+        </header>
+        <div class="mainContents">
+            <nav class="nav">
                 <ul>
+                    <li>Lorem Ipsum</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                 </ul>
-            </div>
-            <div class="middleRight">
-                <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ol>
-            </div>
+            </nav>
+            <main class="main">
+                <p>
+                    What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+                    Where does it come from?
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
+            </main>
+            <aside class="aside">
+                광고
+            </aside>
         </div>
-        <div class="bottom"></div>
+        <footer class="footer">
+             저작권
+        </footer>
     </div>
-    <script>
-        
-    </script>
 </body>
 </html>

@@ -16,7 +16,7 @@ class TetrisView {
         return color;
     }
     makeTetrisPanel() {
-        let panel = document.getElementById('tetris');
+        let tetrisPanel = document.getElementById('tetris');
         for (let i = 0; i < this._panelLineNumber; i++) {
             let panelLine = document.createElement('div');
             panelLine.className = 'tetrisLine' + ' tetrisLine' + i;
@@ -26,8 +26,9 @@ class TetrisView {
                 //panelCell.style.backgroundColor = this._makeRandomColor();
                 panelLine.appendChild(panelCell);
             }
-            panel.appendChild(panelLine);
+            tetrisPanel.appendChild(panelLine);
         }
+        let panel = document.getElementById('tetris');
     }
     testRandomColor() {
         let cells = document.getElementsByClassName('tetrisCell');

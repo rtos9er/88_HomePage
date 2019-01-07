@@ -1,0 +1,52 @@
+﻿/* Header : 테트리스, 타이틀, 블럭 격파 */
+.header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    background-color: blue;
+}
+
+/* .headerLeft : 테트리스 ./Tetris/Tetris.css */
+
+.headerCenter {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: ButtonHighlight;
+}
+
+#headerTitle {
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+.headerRight {
+    flex-basis: 25%;
+    flex-shrink: 2;
+    background-color: turquoise;
+}
+
+/* Header 미디어 쿼리 */
+@media (max-width: 520px) {
+    #tetris {
+        display: none;
+    }
+
+    .headerRight {
+        display: none;
+    }
+
+    #headerTitle {
+        text-align: center;
+        position: static;
+        top: auto;
+    }
+
+    .headerCenter {
+        background-color: turquoise;
+    }
+
+    .header {
+        height: 80px;
+    }
+}
