@@ -1,14 +1,14 @@
-* {
+ï»¿* {
     box-sizing: border-box;
 }
 
-/* Home Page : Flex ·¹ÀÌ¾Æ¿ô »ç¿ë */
+/* Home Page : Flex ë ˆì´ì•„ì›ƒ ì‚¬ìš© */
 .mainWrapper {
     display: flex;
     flex-direction: column;
 }
 
-/* Header : Å×Æ®¸®½º, Å¸ÀÌÆ², ºí·° °İÆÄ */
+/* Header : í…ŒíŠ¸ë¦¬ìŠ¤, íƒ€ì´í‹€, ë¸”ëŸ­ ê²©íŒŒ */
 
 /* Middle : Navigator, Main, Aside */
 .mainContents {
@@ -41,14 +41,14 @@
     background-color: tomato;
 }
 
-/* Footer : ÀúÀÛ±Ç? */
+/* Footer : ì €ì‘ê¶Œ? */
 .footer {
     border-top: 1px solid gray;
     text-align: center;
     background-color: rosybrown;
 }
 
-/* ±¤°í »èÁ¦ ¹Ìµğ¾î Äõ¸® */
+/* ê´‘ê³  ì‚­ì œìš© ë¯¸ë””ì–´ ì¿¼ë¦¬ */
 @media (max-width: 520px) {
     .aside {
         display: none;

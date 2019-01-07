@@ -1,12 +1,12 @@
-// JavaScript source code
+ï»¿// JavaScript source code
 'use strict';
 
 class TetrisView {
     constructor(lineNumber, cellNumber) {
-        this._panelLineNumber = lineNumber; // Panel Çà ¼ö
-        this._panelCellNumber = cellNumber; // Panel ¿­ ¼ö
+        this._panelLineNumber = lineNumber; // Panel í–‰ ìˆ˜
+        this._panelCellNumber = cellNumber; // Panel ì—´ ìˆ˜
     }
-    _makeRandomColor() {    // #ccddee ¹®ÀÚ¿­ ¸¸µé±â
+    _makeRandomColor() {    // #ccddee ë¬¸ìì—´ ë§Œë“¤ê¸°
         const ColorNumber = '0123456789abcdef';
         let color = '#';
         for (let i = 0; i < 6; i++) {

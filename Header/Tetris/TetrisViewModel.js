@@ -1,10 +1,10 @@
-// JavaScript source code
+ï»¿// JavaScript source code
 'use strict';
 
 class TetrisViewModel {
     constructor() {
-        this._panelLineNumber = 10; // Panel Çà ¼ö
-        this._panelCellNumber = 10; // Panel ¿­ ¼ö
+        this._panelLineNumber = 10; // Panel í–‰ ìˆ˜
+        this._panelCellNumber = 10; // Panel ì—´ ìˆ˜
         this._tetrisModel = new TetrisModel(this._panelLineNumber, this._panelCellNumber);
         this._tetrisView = new TetrisView(this._panelLineNumber, this._panelCellNumber);
     }
